@@ -1,0 +1,16 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	7
+#@/user_id	037e4404-6c58-44d4-bf9e-740420971063
+da tong 	大同	c=0 d=0.1 t=6
+diao 	屌	c=1 d=1 t=3
+fang 	方	c=0 d=0.1 t=6
+fang da tong 	方大同	c=1 d=1 t=7
+li hai 	厲害	c=1 d=1 t=4
+ni 	你	c=1 d=1.08661 t=7
+ni xian zai 	你現在	c=1 d=0.995012 t=7
+shi 	是	c=1 d=1 t=6
+xian zai 	現在	c=0 d=0.099005 t=7
+zai 	在	c=1 d=1 t=7
