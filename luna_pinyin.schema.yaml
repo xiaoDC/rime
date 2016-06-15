@@ -5,7 +5,7 @@ custom_phrase:
   enable_sentence: false
   initial_quality: 1
   user_dict: custom_phrase
-customization: 1921519304
+customization: 2525888354
 engine:
   filters:
     - simplifier
@@ -64,7 +64,7 @@ schema:
     
   name: "朙月拼音"
   schema_id: luna_pinyin
-  version: 0.22.custom.1921519304
+  version: 0.22.custom.2525888354
 speller:
   algebra:
     - "erase/^xx$/"
