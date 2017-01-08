@@ -5,7 +5,7 @@ custom_phrase:
   enable_sentence: false
   initial_quality: 1
   user_dict: custom_phrase
-customization: 2525888354
+customization: 820030161
 engine:
   filters:
     - simplifier
@@ -64,7 +64,7 @@ schema:
     
   name: "朙月拼音"
   schema_id: luna_pinyin
-  version: 0.22.custom.2525888354
+  version: 0.22.custom.820030161
 speller:
   algebra:
     - "erase/^xx$/"
@@ -89,11 +89,10 @@ switches:
   - name: full_shape
     states: ["半角", "全角"]
   - name: simplification
+    reset: 1
     states: ["漢字", "汉字"]
-  - name: ascii_punct
-    states: ["。，", "．，"]
 translator:
-  dictionary: luna_pinyin.extended
+  dictionary: luna_pinyin
   preedit_format:
     - "xform/([nl])v/$1ü/"
     - "xform/([nl])ue/$1üe/"

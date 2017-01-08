@@ -1,18 +1,18 @@
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
-    Caps_Lock: clear
+    Caps_Lock: noop
     Control_L: noop
     Control_R: noop
-    Eisu_toggle: clear
-    Shift_L: inline_ascii
-    Shift_R: commit_text
-config_version: 0.36.custom.2143764670
-customization: 2143764670
+    Shift_L: commit_code
+    Shift_R: noop
+config_version: 0.36.custom.1917581434
+customization: 1917581434
 key_binder:
   bindings:
     - {accept: bracketleft, send: Page_Up, when: paging}
     - {accept: bracketright, send: Page_Down, when: has_menu}
+    - {accept: Tab, select: .next, when: always}
 menu:
   page_size: 9
 punctuator:
@@ -100,10 +100,12 @@ switcher:
   hotkeys:
     - "Control+grave"
     - "Control+Shift+grave"
-    - "Control+d"
+    - "Control+s"
   option_list_separator: "／"
   save_options:
     - full_shape
     - ascii_punct
     - simplification
     - extended_charset
+translator:
+  enable_user_dict: true

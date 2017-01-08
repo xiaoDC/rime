@@ -23,13 +23,16 @@ patch:
   tyle/border_width: 4             # 窗口边界宽度，大于圆角半径才有效果
   # style/line_spacing: 1         # 候选词的行间距
   # style/spacing: 5              # 在非内嵌编码模式下，预编辑和候选词之间的间距
-  style/font_face: "冬青黑体简体中文"  # 预选栏文字字体，使用中文字体：兰亭黑-纤黑
-  style/font_point: 16             #预选栏文字字号
-  style/label_font_face: "Menlo"  # 预选栏编号字体，使用西文字体：Myriad Pro Light
-  style/label_font_point: 16       #预选栏编号字号
+  style/font_face: "Menlo"  # 预选栏文字字体，使用中文字体：兰亭黑-纤黑
+  # style/font_face: "Lantinghei TC Extralight"  # 预选栏文字字体，使用中文字体：兰亭黑-纤黑
+  # Lantinghei TC Extralight
+  style/font_point: 18             #预选栏文字字号
+  style/label_font_face: "Apercu"  # 预选栏编号字体，使用西文字体：Myriad Pro Light
+  style/label_font_point: 18       #预选栏编号字号
 
   #上述是候选栏的基本设置，确定了文字的大小和候选栏的外观样式。
   #下面是“demo”样式文件的配置，主要确定候选栏颜色配置。
+
   # preset_color_schemes:
   # demo:        #样式名称，就是上述“style/color_scheme: demo”
   # author: "Barret Lee <barret.china@gmail.com>"        #作者
@@ -43,3 +46,21 @@ patch:
   # hilited_comment_text_color: 0x00a5ea      #注解文字高亮
   # hilited_text_color: 0x7fffff              #拼音串高亮（需要开启内嵌编码）
   # text_color: 0xa5a5a5                      #拼音串颜色（需要开启内嵌编码）
+
+
+
+  # 關閉中文輸入
+  # @see [http://code.google.com/p/rimeime/wiki/CustomizationGuide#在特定程序裏關閉中文輸入]
+  #
+  # Bundle Identifier 查找方法：
+  # 右键『应用.app』-> 显示包内容
+  # Contents/Info.plist -> BundleIdentifier
+  #           Bundle Identifier
+  app_options/com.apple.Xcode:
+    ascii_mode: true
+  app_options/com.apple.Spotlight:
+    ascii_mode: true
+  app_options/org.gnu.Emacs:
+    ascii_mode: true
+  app_options/com.runningwithcrayons.Alfred-3:
+    ascii_mode: true
